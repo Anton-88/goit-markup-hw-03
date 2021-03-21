@@ -8,12 +8,14 @@
   --team-bg-color: #f5f4fa;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --img-shadow-color: #000000;
+  --portfolio-img-border-color: #EEEEEE;
   /* varuables */
   --grid-item: 3;
 }
 
 html {
   box-sizing: border-box;
+  /* max-width: 1600px; */
 }
 
 *,
@@ -30,6 +32,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+ul {
+  padding: 0;
 }
 
 img {
@@ -55,6 +61,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  border-bottom: 1px solid #ececec;
 }
 
 address {
@@ -95,6 +103,7 @@ address {
   background: var(--team-bg-color);
   border-radius: 4px;
   cursor: pointer;
+  padding: 5px 20px;
 }
 
 .container {
@@ -103,28 +112,35 @@ address {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* background-color: green; */
+}
+
+.main-site-flex {
+  display: flex;
+  margin-right: 90px;
+}
+
+.menu-item {
+  padding: 12px 0;
 }
 
 .hero {
   background-color: var(--footer-bg-color);
-  padding-left: 200px;
-  padding-right: 200px;
+  /* padding: 94px 0; */
   margin-left: 0;
   margin-right: 0;
+  max-height: 600px;
 }
 
 .hero-container {
-  padding: 200px 250px;
+  padding: 200px 0;
   text-align: center;
+  min-height: 100vh;
 }
 
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* align-items: center; */
-  /* text-align: center; */
   letter-spacing: 0.06em;
   padding: 10px 30px;
   color: var(--pure-white-color);
@@ -141,6 +157,10 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--pure-white-color);
+
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .main-site-name,
@@ -163,6 +183,8 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+
+  margin-bottom: 50px;
 }
 
 .sub-title-heading {
@@ -212,12 +234,12 @@ address {
 }
 
 .menu-item:first-child {
-  margin-right: 90px;
+  margin-right: 50px;
 }
 
 /* Our advantages section */
 .our-advantages {
-  padding: 45px 200px;
+  padding-top: 94px;
 }
 
 .advantages-item {
@@ -232,11 +254,12 @@ address {
 }
 .adv-item-text {
   text-align: left;
+  margin-bottom: 0;
 }
 
 /* Work section */
 .section-work {
-  padding: 45px 200px;
+  padding-top: 94px;
 }
 
 .grid-work-item {
@@ -247,7 +270,7 @@ address {
 
 /* Team section */
 .section-team {
-  padding: 45px 200px;
+  padding: 94px 0;
 }
 
 .team-grid-item {
@@ -287,6 +310,10 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  text-align: left;
+
+  padding-left: 25px;
+  margin-bottom: 5px;
 }
 
 .link-title-text {
@@ -295,12 +322,16 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  text-align: left;
+
+  padding-left: 25px;
+  margin-bottom: 0;
 }
 
 /* Portfolio */
 
 .portfolio-section {
-  padding: 90px 205px 60px;
+  padding: 94px;
 }
 
 .portfolio-item:not(:last-child) {
@@ -318,21 +349,24 @@ address {
 }
 
 .portfolio-item-example {
+  border: 1px solid var(--portfolio-img-border-color);
+  
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
+  padding-bottom: 20px;
 }
 
 /* Footer */
 
 .main-site-name-footer {
   color: var(--pure-white-color);
-  margin-left: 40px;
 }
 
 .footer {
   background-color: var(--footer-bg-color);
-  padding: 60px 200px;
+  padding: 60px 0;
+  min-height: 250px;
 }
 
 .footer-text-color {
@@ -352,5 +386,5 @@ address {
 .flex-address {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 20px;
 }
