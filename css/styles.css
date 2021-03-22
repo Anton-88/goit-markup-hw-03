@@ -331,7 +331,7 @@ address {
 /* Portfolio */
 
 .portfolio-section {
-  padding: 94px;
+  padding: 94px 0;
 }
 
 .portfolio-item:not(:last-child) {
