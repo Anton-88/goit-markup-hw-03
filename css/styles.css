@@ -8,7 +8,7 @@
   --team-bg-color: #f5f4fa;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --img-shadow-color: #000000;
-  --portfolio-img-border-color: #EEEEEE;
+  --portfolio-img-border-color: #eeeeee;
   /* varuables */
   --grid-item: 3;
 }
@@ -102,6 +102,7 @@ address {
   color: var(--title-color);
   background: var(--team-bg-color);
   border-radius: 4px;
+  border-width: 0;
   cursor: pointer;
   padding: 5px 20px;
 }
@@ -120,12 +121,14 @@ address {
 }
 
 .menu-item {
-  padding: 12px 0;
+}
+
+.header-link {
+  padding: 15px;
 }
 
 .hero {
   background-color: var(--footer-bg-color);
-  /* padding: 94px 0; */
   margin-left: 0;
   margin-right: 0;
   max-height: 600px;
@@ -134,7 +137,7 @@ address {
 .hero-container {
   padding: 200px 0;
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .hero-button {
@@ -147,6 +150,8 @@ address {
   background-color: var(--accent-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-width: 0;
 }
 
 .hero-text {
@@ -192,6 +197,7 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .grid {
@@ -207,14 +213,15 @@ address {
   display: flex;
   align-items: center;
   margin-left: auto;
+  min-height: 80px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navigation-contact {
@@ -259,7 +266,7 @@ address {
 
 /* Work section */
 .section-work {
-  padding-top: 94px;
+  padding: 94px 0;
 }
 
 .grid-work-item {
@@ -270,6 +277,7 @@ address {
 
 /* Team section */
 .section-team {
+  background-color: var(--team-bg-color);
   padding: 94px 0;
 }
 
@@ -284,11 +292,14 @@ address {
   --grid-item: 4;
 }
 
+.team-name {
+  padding: 30px;
+}
+
 .team-img-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 .team-member-name {
@@ -298,11 +309,13 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .team-member-function {
   font-weight: 400;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .link-title {
@@ -312,7 +325,6 @@ address {
   color: var(--title-color);
   text-align: left;
 
-  padding-left: 25px;
   margin-bottom: 5px;
 }
 
@@ -324,7 +336,6 @@ address {
   color: var(--main-text-color);
   text-align: left;
 
-  padding-left: 25px;
   margin-bottom: 0;
 }
 
@@ -338,8 +349,14 @@ address {
   margin-right: 10px;
 }
 
+.portfolio-item-description {
+  padding: 20px 25px;
+  border: 1px solid var(--portfolio-img-border-color);
+  border-top: none;
+}
+
 .portfolio-grid {
-  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -349,24 +366,21 @@ address {
 }
 
 .portfolio-item-example {
-  border: 1px solid var(--portfolio-img-border-color);
-  
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-  padding-bottom: 20px;
 }
 
 /* Footer */
 
 .main-site-name-footer {
   color: var(--pure-white-color);
+  margin-bottom: 20px;
 }
 
 .footer {
   background-color: var(--footer-bg-color);
   padding: 60px 0;
-  min-height: 250px;
 }
 
 .footer-text-color {
@@ -377,6 +391,9 @@ address {
 
 .footer-link {
   color: var(--footer-text-color);
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .footer-address-color {
