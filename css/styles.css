@@ -220,8 +220,6 @@ address {
   display: flex;
   align-items: center;
   margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navigation-contact {
@@ -294,12 +292,16 @@ address {
 
 .team-name {
   padding: 30px;
-}
-
-.team-img-item {
+  background-color: var(--pure-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-img-item {
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
 }
 
 .team-member-name {
